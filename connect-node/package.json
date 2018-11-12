@@ -1,0 +1,9 @@
+{
+    "name": "connect-node",
+    "description": "A nodejs program using connect.",
+    "version": "0.0.1",
+    "dependencies": {
+        "connect": "3.6.6",
+        "connect-static": "1.5.2"
+    }
+}
