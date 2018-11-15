@@ -37,6 +37,28 @@ var http = require('http')
 
 // serve-static 托管文件
 var serveStatic = require('serve-static')
+var bodyParser = require('body-parser')
 
 var app = connect()
+
+app.use(serveStatic('static'))
+
+app.use(bodyParser())
+
+app.use('/upload', function(req, res, next) {
+    if ('POST' == req.method) {
+        console.log('RECIEVE REQUEST')
+        console.log(req.body)
+    }
+    res.end('Hello world')
+})
+
+http.createServer(app).listen(3000, function() {
+    console.log('Listening at port 3000')
+})
+
+
+// Other modules：cookie-parser、cookie-session
+//                method-override、basic-auth
+
 
