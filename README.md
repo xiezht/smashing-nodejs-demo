@@ -1,5 +1,5 @@
-# Seven Days for NodeJS
+# Smashing Node.js Demo
 
 The codes writen while learning NodeJS.
 
-Referrence book: 《Seven Days for NodeJS》
+Referrence book: 《Samshing Node.js: JavaScript Everywhere》
