@@ -53,6 +53,7 @@ fs.readdir(process.cwd(), (err, files) => {
           if (err) return console.log(err.message)
           console.log('')
           console.log('\033[90m' + data + '\033[39m')
+          read()
         })
       }
     }
